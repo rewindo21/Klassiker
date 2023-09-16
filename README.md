@@ -1,6 +1,6 @@
 # Klassiker
 
-Implementation of data structure using C language. What in the world is more classic than this?
+Implementation of data structures using C language. What in the world is more classic than this?
 
 # Table of Contents
 - [Types of Data Structure](#item-one)
