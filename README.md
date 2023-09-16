@@ -1,5 +1,14 @@
 # Klassiker
 
+Implementation of data structure using C language. What in the world is more classic than this?
+
+# Table of Contents
+- [Types of Data Structure](#item-one)
+- [Asymptotic Analysis](#item-two)
+- [Stack](#stack)
+
+
+<a id="item-one"></a>
 ## Types of Data Structure
 
 | Linear data structure      | Non-linear data structure |
@@ -12,6 +21,7 @@
 | Example: Arrays, Stack, Queue, Linked List   | Example: Tree, Graph        |
 
 
+<a id="item-two"></a>
 ## Asymptotic Analysis
 
 The efficiency of an algorithm depends on the amount of time complexity and storage complexity of the algorithm.
@@ -35,3 +45,10 @@ There are mainly three asymptotic notations:
 ### Comparing Time Complexity
 
 1 < logn < sqrtn < n < nlogn < n^2 < n^3 < 2^n < 3^n < n^n
+
+
+<a id="item-three"></a>
+## Stack
+A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first. You can think of the stack data structure as the pile of plates on top of another.
+![stack](src/stack.jpeg)
+See the code [here](Stack.c)
