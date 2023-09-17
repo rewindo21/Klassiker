@@ -3,10 +3,17 @@
 Implementation of data structures using C language. What in the world is more classic than this?
 
 # Table of Contents
+- [Why Learn DSA?](#item-zero)
 - [Types of Data Structure](#item-one)
 - [Asymptotic Analysis](#item-two)
 - [Stack](#stack)
 
+<a id="item-zero"></a>
+## Why Learn DSA?
+
+- Write optimized and scalable code - Once you have knowledge about different data structures and algorithms, you can determine which data structure and algorithm to choose in various conditions.
+- Effective use of time and memory - Having knowledge about data structures and algorithms will help you write codes that run faster and require less storage.
+- Better job opportunities - Data structures and algorithms questions are frequently asked in job interviews of various organizations including Google, Facebook, and so on.
 
 <a id="item-one"></a>
 ## Types of Data Structure
@@ -52,3 +59,13 @@ There are mainly three asymptotic notations:
 A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first. You can think of the stack data structure as the pile of plates on top of another.
 ![stack](src/stack.jpeg)
 See the code [here](Stack.c)
+
+### Stack Time Complexity
+
+For the array-based implementation of a stack, the push and pop operations take constant time, i.e. O(1).
+
+### Applications of Stack Data Structure
+
+- To reverse a word - Put all the letters in a stack and pop them out. Because of the LIFO order of stack, you will get the letters in reverse order.
+- In compilers - Compilers use the stack to calculate the value of expressions like 2 + 4 / 5 * (7 - 9) by converting the expression to prefix or postfix form.
+- In browsers - The back button in a browser saves all the URLs you have visited previously in a stack. Each time you visit a new page, it is added on top of the stack. When you press the back button, the current URL is removed from the stack, and the previous URL is accessed.
