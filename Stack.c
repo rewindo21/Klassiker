@@ -1,5 +1,3 @@
-// Stack implementation in C
-
 /*
 The operations work as follows:
 
@@ -48,7 +46,7 @@ int isEmpty(st *s) {
 }
 
 
-// Add elements into stack
+// Add element into stack
 void push(st *s, int newitem) {
     if(isfull(s)) {
         printf("\n STACK IS FULL \n");

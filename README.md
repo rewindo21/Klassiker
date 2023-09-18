@@ -3,19 +3,20 @@
 Implementation of data structures using C language. What in the world is more classic than this?
 
 # Table of Contents
-- [Why Learn DSA?](#item-zero)
-- [Types of Data Structure](#item-one)
-- [Asymptotic Analysis](#item-two)
+- [Why Learn DSA?](#question)
+- [Types of Data Structure](#types)
+- [Asymptotic Analysis](#asymp)
 - [Stack](#stack)
+- [Queue](#queue)
 
-<a id="item-zero"></a>
+<a id="question"></a>
 ## Why Learn DSA?
 
 - Write optimized and scalable code - Once you have knowledge about different data structures and algorithms, you can determine which data structure and algorithm to choose in various conditions.
 - Effective use of time and memory - Having knowledge about data structures and algorithms will help you write codes that run faster and require less storage.
 - Better job opportunities - Data structures and algorithms questions are frequently asked in job interviews of various organizations including Google, Facebook, and so on.
 
-<a id="item-one"></a>
+<a id="types"></a>
 ## Types of Data Structure
 
 | Linear data structure      | Non-linear data structure |
@@ -28,7 +29,7 @@ Implementation of data structures using C language. What in the world is more cl
 | Example: Arrays, Stack, Queue, Linked List   | Example: Tree, Graph        |
 
 
-<a id="item-two"></a>
+<a id="asymp"></a>
 ## Asymptotic Analysis
 
 The efficiency of an algorithm depends on the amount of time complexity and storage complexity of the algorithm.
@@ -54,7 +55,7 @@ There are mainly three asymptotic notations:
 1 < logn < sqrtn < n < nlogn < n^2 < n^3 < 2^n < 3^n < n^n
 
 
-<a id="item-three"></a>
+<a id="stack"></a>
 ## Stack
 A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first. You can think of the stack data structure as the pile of plates on top of another.
 ![stack](src/stack.jpeg)
@@ -69,3 +70,9 @@ For the array-based implementation of a stack, the push and pop operations take 
 - To reverse a word - Put all the letters in a stack and pop them out. Because of the LIFO order of stack, you will get the letters in reverse order.
 - In compilers - Compilers use the stack to calculate the value of expressions like 2 + 4 / 5 * (7 - 9) by converting the expression to prefix or postfix form.
 - In browsers - The back button in a browser saves all the URLs you have visited previously in a stack. Each time you visit a new page, it is added on top of the stack. When you press the back button, the current URL is removed from the stack, and the previous URL is accessed.
+
+<a id="queue"></a>
+## Queue
+A Queue is a linear data structure that follows the principle of First In First Out (FIFO). This means the first element inserted inside the stack is removed first. You can think of the stack data structure as the ticket queue outside a cinema hall, where the first person entering the queue is the first person who gets the ticket.
+![stack](src/queue.jpeg)
+See the code [here](Queue.c)
