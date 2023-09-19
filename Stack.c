@@ -55,9 +55,13 @@ int pop(struct Stack* stack)
 
 // Function to print elements of stack
 void printStack(struct Stack* stack) {
-    printf("\nStack: ");
-    for (int i = 0; i <= stack->top; i++) {
-        printf("%d ", stack->array[i]);
+    if (isEmpty(stack)) {
+        printf("\nStack: empty");
+    } else {
+        printf("\nStack: ");
+        for (int i = 0; i <= stack->top; i++) {
+            printf("%d ", stack->array[i]);
+        }
     }
 }
 

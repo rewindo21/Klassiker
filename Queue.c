@@ -61,9 +61,13 @@ int dequeue(struct Queue* queue)
 
 // Function to print elements of queue
 void printQueue(struct Queue* queue) {
-    printf("\nQueue: ");
-    for (int i = queue->front; i <= queue->rear; i++) {
-        printf("%d ", queue->array[i]);
+    if (isEmpty(queue)) {
+        printf("\nQueue: empty");
+    } else {
+        printf("\nQueue: ");
+        for (int i = queue->front; i <= queue->rear; i++) {
+            printf("%d ", queue->array[i]);
+        }
     }
 }
 
