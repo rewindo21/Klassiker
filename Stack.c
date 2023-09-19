@@ -1,99 +1,85 @@
-/*
-The operations work as follows:
-
-A pointer called TOP is used to keep track of the top element in the stack.
-When initializing the stack, we set its value to -1 so that we can check if the stack is empty by comparing TOP == -1.
-On pushing an element, we increase the value of TOP and place the new element in the position pointed to by TOP.
-On popping an element, we return the element pointed to by TOP and reduce its value.
-Before pushing, we check if the stack is already full
-Before popping, we check if the stack is already empty
-*/
-
+// Stack implementation
 #include <stdio.h>
 #include <stdlib.h>
 
-#define MAX 10          // A constant with a value of 10, representing the maximum number of elements the stack can hold.
-int count = 0;          // A variable with a value of 0, which will be used to keep track of the number of elements currently in the stack. (Used for printing elements)
-
-
-// Creating a stack
-struct stack {
-    int items[MAX];     // An integer array to hold the stack elements
-    int top;            // An integer to keep track of the top element's index
+// A structure to represent a stack
+struct Stack {
+	int top;
+	unsigned capacity;
+	int* array;
 };
-typedef struct stack st;
 
-void createEmptyStack(st *s) {
-    s->top = -1;
+// Function to create a stack of given capacity
+struct Stack* createStack(unsigned capacity)
+{
+	struct Stack* stack = (struct Stack*)malloc(sizeof(struct Stack));
+	stack->capacity = capacity;
+	stack->top = -1;
+	stack->array = (int*)malloc(stack->capacity * sizeof(int));
+	return stack;
 }
 
-
-// Check if the stack is full
-int isfull(st *s) {
-    if (s->top == MAX - 1)
-        return 1;
-    else
-        return 0;
+// Stack is empty when top is equal to -1
+int isEmpty(struct Stack* stack)
+{
+	return stack->top == -1;
 }
 
-
-// Check if the stack is empty
-int isEmpty(st *s) {
-    if (s->top == -1)
-        return 1;
-    else
-        return 0;
+// Stack is full when top is equal to the last index
+int isFull(struct Stack* stack)
+{
+	return stack->top == stack->capacity - 1;
 }
 
-
-// Add element into stack
-void push(st *s, int newitem) {
-    if(isfull(s)) {
-        printf("\n STACK IS FULL \n");
+// Function to add an item to stack. It increases top by 1
+void push(struct Stack* stack, int item)
+{
+	if (isFull(stack)) {
+        printf("\n STACK IS FULL");
     } else {
-        s->top++;
-        s->items[s->top] = newitem;
+	    stack->top++;
+	    stack->array[stack->top] = item;
+	    printf("\n%d pushed to stack", item);
     }
-    count++;
 }
 
-
-// Remove element from stack
-void pop(st *s) {
-    if (isEmpty(s)) {
-        printf("\n STACK IS EMPTY \n");
+// Function to remove an item from stack. It decreases top by 1
+int pop(struct Stack* stack)
+{
+	if (isEmpty(stack)) {
+        printf("\n STACK IS EMPTY");
     } else {
-        s->top--;
+	    return stack->array[stack->top--];
     }
-    count--;
 }
 
-
-// Print elements of stack
-void printStack(st *s) {
-    printf("Stack: ");
-    for (int i = 0; i < count; i++) {
-        printf("%d ", s->items[i]);
+// Function to print elements of stack
+void printStack(struct Stack* stack) {
+    printf("\nStack: ");
+    for (int i = 0; i <= stack->top; i++) {
+        printf("%d ", stack->array[i]);
     }
 }
 
 
-// Driver code
-int main() {
-    st *s = (st *)malloc(sizeof(st));       // This line of code allocates memory to hold an 'st' structure dynamically, and 's' becomes a pointer to that allocated memory.
+// Driver program to test above functions
+int main()
+{
+	struct Stack* stack = createStack(10);
 
-    createEmptyStack(s);
+    printStack(stack);
 
-    push(s, 1);
-    push(s, 2);
-    push(s, 3);
+	push(stack, 10);
+	push(stack, 20);
+	push(stack, 30);
 
-    printStack(s);
+    printStack(stack);
 
-    pop(s);
+    printf("\n%d popped from stack", pop(stack));
     
-    printf("\n After popping out: \n");
-    printStack(s);
+    printStack(stack);
 
+	return 0;
 }
+
 
