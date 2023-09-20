@@ -76,3 +76,14 @@ For the array-based implementation of a stack, the push and pop operations take 
 A Queue is a linear data structure that follows the principle of First In First Out (FIFO). This means the first element inserted inside the stack is removed first. You can think of the stack data structure as the ticket queue outside a cinema hall, where the first person entering the queue is the first person who gets the ticket.
 ![stack](src/queue.jpeg)
 See the code [here](Queue.c)
+
+### Queue Time Complexity
+
+For the array-based implementation of a queue, the enqueue and dequeue operations take constant time, i.e. O(1).
+
+### Applications of Queue Data Structure
+
+- CPU scheduling, Disk Scheduling
+- When data is transferred asynchronously between two processes.The queue is used for synchronization. For example: IO Buffers, pipes, file IO, etc
+- Handling of interrupts in real-time systems.
+- Call Center phone systems use Queues to hold people calling them in order.
