@@ -8,6 +8,7 @@ Implementation of data structures using C language. What in the world is more cl
 - [Asymptotic Analysis](#asymp)
 - [Stack](#stack)
 - [Queue](#queue)
+- [Linked list](#linked-list)
 
 <a id="question"></a>
 ## Why Learn DSA?
@@ -87,3 +88,16 @@ For the array-based implementation of a queue, the enqueue and dequeue operation
 - When data is transferred asynchronously between two processes.The queue is used for synchronization. For example: IO Buffers, pipes, file IO, etc
 - Handling of interrupts in real-time systems.
 - Call Center phone systems use Queues to hold people calling them in order.
+
+<a id="linked-list"></a>
+## Linked list
+A linked list is a linear data structure that includes a series of connected nodes. A node in a linked list typically consists of two components:
+- Data: It holds the actual value or data associated with the node.
+- Next Pointer: It stores the memory address (reference) of the next node in the sequence.
+
+Head and Tail: The linked list is accessed through the head node, which points to the first node in the list. The last node in the list points to NULL or nullptr, indicating the end of the list. This node is known as the tail node.
+
+Types of linked lists
+- Single-linked list
+- Double linked list
+- Circular linked list
