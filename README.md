@@ -96,8 +96,20 @@ A linked list is a linear data structure that includes a series of connected nod
 - Next Pointer: It stores the memory address (reference) of the next node in the sequence.
 
 Head and Tail: The linked list is accessed through the head node, which points to the first node in the list. The last node in the list points to NULL or nullptr, indicating the end of the list. This node is known as the tail node.
+![stack](src/array-linked-list.png)
+See the code [here](Linked-List.c)
 
 Types of linked lists
 - Single-linked list
 - Double linked list
 - Circular linked list
+  
+
+### Linked List Time Complexity
+
+
+### Applications of Linked List
+- Dynamic memory allocation
+- Implemented in stack and queue
+- In undo functionality of softwares
+- Hash tables, Graphs
