@@ -98,6 +98,8 @@ A linked list is a linear data structure that includes a series of connected nod
 Head and Tail: The linked list is accessed through the head node, which points to the first node in the list. The last node in the list points to NULL or nullptr, indicating the end of the list. This node is known as the tail node.
 
 ### Array vs Linked List
+![stack](src/array-linked-list.png)
+
 | Array | Linked List |
 | ----------- | ----------- |
 | Arrays are stored in contiguous location | Linked lists are not stored in contiguous location. |
@@ -108,16 +110,22 @@ Head and Tail: The linked list is accessed through the head node, which points t
 | Insertion and deletion operation takes time. | Insertion and deletion operation is faster. |
 
 
-![stack](src/array-linked-list.png)
-See the code [here](Linked-List.c)
-
 ### Types of linked lists
-- Single-linked list
-- Double linked list
-- Circular linked list
+- Single-linked list: In a singly linked list, each node contains a reference to the next node in the sequence. Traversing a singly linked list is done in a forward direction.
+- Double linked list: In a doubly linked list, each node contains references to both the next and previous nodes. This allows for traversal in both forward and backward directions, but it requires additional memory for the backward reference.
+- Circular linked list:  In a circular linked list, the last node points back to the head node, creating a circular structure. It can be either singly or doubly linked.
   
+Simple linked list implementation [->](Linked-List.c)
+
+Linked list implementation with operations [->](Linked-List.c)
 
 ### Linked List Time Complexity
+|  | Array | Linked List |
+| ----------- | ----------- | ----------- |
+| Cost of accessing elements | O(1) | O(n) |
+| Insert/Remove from beginning | O(n) | O(1) |
+| Insert/Remove from end | O(1) | O(n) |
+| Insert/Remove from mid | O(n) | O(n) |
 
 
 ### Applications of Linked List
