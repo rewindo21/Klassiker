@@ -96,10 +96,22 @@ A linked list is a linear data structure that includes a series of connected nod
 - Next Pointer: It stores the memory address (reference) of the next node in the sequence.
 
 Head and Tail: The linked list is accessed through the head node, which points to the first node in the list. The last node in the list points to NULL or nullptr, indicating the end of the list. This node is known as the tail node.
+
+### Array vs Linked List
+| Array | Linked List |
+| ----------- | ----------- |
+| Arrays are stored in contiguous location | Linked lists are not stored in contiguous location. |
+| Fixed in size. | Dynamic in size. |
+| Memory is allocated at compile time. | Memory is allocated at run time. |
+| Uses less memory than linked lists. |  Uses more memory because it stores both data and the address of next node. |
+|  Elements can be accessed easily. | Element accessing requires the traversal of whole linked list. |
+| Insertion and deletion operation takes time. | Insertion and deletion operation is faster. |
+
+
 ![stack](src/array-linked-list.png)
 See the code [here](Linked-List.c)
 
-Types of linked lists
+### Types of linked lists
 - Single-linked list
 - Double linked list
 - Circular linked list
