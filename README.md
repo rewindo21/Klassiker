@@ -146,6 +146,8 @@ Hash tables are named Object in JavaScript, Dictionary in Python, and Map in Jav
 
 Hashing (Hash Function): In a hash table, a new index is processed using the keys. And, the element corresponding to that key is stored in the index. This process is called hashing.
 
+Hash Collision: When the hash function generates the same index for multiple keys, there will be a conflict (what value to be stored in that index). This is called a hash collision.
+
 ![Hash](src/hash-table.png)
 See the code [here]()
 

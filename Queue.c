@@ -72,7 +72,7 @@ void printQueue(struct Queue* queue) {
 }
 
 
-// Driver program to test above functions./
+// Driver program to test above functions.
 int main()
 {
 	struct Queue* queue = createQueue(10);

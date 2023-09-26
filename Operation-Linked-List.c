@@ -189,13 +189,14 @@ void printList()
     printf("\n");
 }
 
+// Driver program
 int main()
 {
 	int choice;
 	while(1)
 	{
 	    printf("\n*****\n");
-	    printf("0. To exit");
+	    printf("0. To exit\n");
 	    printf("1. Insert Node at beginning\n");
 	    printf("2. Insert Node at specific position\n");
 	    printf("3. Insert Node at the end of LinkedList\n");
@@ -203,7 +204,7 @@ int main()
 	    printf("5. Delete Node at the end of LinkedList\n");
 	    printf("6. Delete Node at specific position\n");
 	    printf("7. Print list\n");
-	    printf("\n*****\n");
+	    printf("*****\n");
 
 		printf("\n Enter your choice: ");
 		scanf("%d",&choice);
