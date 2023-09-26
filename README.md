@@ -98,7 +98,7 @@ A linked list is a linear data structure that includes a series of connected nod
 Head and Tail: The linked list is accessed through the head node, which points to the first node in the list. The last node in the list points to NULL or nullptr, indicating the end of the list. This node is known as the tail node.
 
 ### Array vs Linked List
-![stack](src/array-linked-list.png)
+![LinkedList](src/array-linked-list.png)
 
 | Array | Linked List |
 | ----------- | ----------- |
@@ -117,7 +117,7 @@ Head and Tail: The linked list is accessed through the head node, which points t
   
 Simple linked list implementation [->](Linked-List.c)
 
-Linked list implementation with operations [->](Linked-List.c)
+Linked list implementation with operations [->](Operation-Linked-List.c)
 
 ### Linked List Time Complexity
 |  | Array | Linked List |
@@ -133,3 +133,24 @@ Linked list implementation with operations [->](Linked-List.c)
 - Implemented in stack and queue
 - In undo functionality of softwares
 - Hash tables, Graphs
+
+
+<a id="hash"></a>
+## Hash Table
+The Hash table data structure stores elements in key-value pairs where
+
+- Key- unique integer that is used for indexing the values
+- Value - data that are associated with keys.
+
+Hash tables are named Object in JavaScript, Dictionary in Python, and Map in Java, Scala, and Go.
+
+Hashing (Hash Function): In a hash table, a new index is processed using the keys. And, the element corresponding to that key is stored in the index. This process is called hashing.
+
+![Hash](src/hash-table.png)
+See the code [here]()
+
+### Applications of Linked List
+Hash tables are implemented where
+- constant time lookup and insertion is required
+- cryptographic applications
+- indexing data is required
