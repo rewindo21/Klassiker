@@ -1,4 +1,4 @@
-// Bubble sort in C
+// Selection sort in C
 #include <stdio.h>
 
 void swap(int *a, int *b) {
@@ -7,17 +7,19 @@ void swap(int *a, int *b) {
   *b = temp;
 }
 
-void bubbleSort(int array[], int size){
+void selectionSort(int array[], int size){
     // loop to access each array element
     for (int step = 0; step < size-1; step++){
+        int min = step;
         // loop to compare array elements
-        for (int i = 0; i < size-step-1; i++){
-            // compare two adjacent elements
-            if (array[i] > array[i+1]){
-                // swapping elements
-                swap(&array[i], &array[i+1]);
+        for (int i = step+1; i<size; i++){
+            // select the minimum element in each loop.
+            if (array[i] < min) {
+                min = i;
             }
         }
+        // put min at the correct position
+        swap(&array[min], &array[step]);
     }
 }
 
@@ -32,7 +34,6 @@ int main(){
     int data[] = {-2, 45, 0, 11, -9};
     int size = sizeof(data) / sizeof(data[0]);
 
-    bubbleSort(data, size);
+    selectionSort(data, size);
     printArray(data, size);
 }
-
