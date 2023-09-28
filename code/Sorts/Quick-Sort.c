@@ -27,9 +27,11 @@ int partition(int array[], int low, int high){
 }
 
 void quickSort(int array[], int low, int high){
+    // find the pivot element
     int pivot = partition(array, low, high);
-    quickSort(array, low, pivot - 1);
-    quickSort(array, pivot + 1, high);
+
+    quickSort(array, low, pivot - 1);   // recursive call on the left of pivot
+    quickSort(array, pivot + 1, high);  // recursive call on the right of pivot
 }
 
 void printArray(int array[], int size){
