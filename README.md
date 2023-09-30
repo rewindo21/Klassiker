@@ -180,4 +180,8 @@ Hash tables are implemented where
 ## Search Algorithms
 
 ### Linear Search
+![Linear Search](src/linear-search.JPEG)
+
+
 ### Binary Search
+![Binary Search](src/binary-search.JPEG)
