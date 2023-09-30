@@ -8,7 +8,10 @@ Implementation of data structures using C language. What in the world is more cl
 - [Asymptotic Analysis](#asymp)
 - [Stack](#stack)
 - [Queue](#queue)
-- [Linked list](#linked-list)
+- [Linked List](#linked-list)
+- [Hash Table](#has-table)
+- [Sort Algorithms](#sorts)
+- [Search Algorithms](#searches)
 
 <a id="question"></a>
 ## Why Learn DSA?
@@ -135,7 +138,7 @@ Linked list implementation with operations [->](Operation-Linked-List.c)
 - Hash tables, Graphs
 
 
-<a id="hash"></a>
+<a id="hash-table"></a>
 ## Hash Table
 The Hash table data structure stores elements in key-value pairs where
 
@@ -156,3 +159,25 @@ Hash tables are implemented where
 - constant time lookup and insertion is required
 - cryptographic applications
 - indexing data is required
+
+
+<a id="sorts"></a>
+## Sort Algorithms
+
+### Bubble Sort
+![Bubble Sort](src/bubble-sort.JPEG)
+
+### Selection Sort
+![Selection Sort](src/selection-sort.JPEG)
+
+### Insertion Sort
+![Insertion Sort](src/insertion-sort.JPEG)
+
+### Merge Sort
+### Quick Sort
+
+<a id="searches"></a>
+## Search Algorithms
+
+### Linear Search
+### Binary Search
