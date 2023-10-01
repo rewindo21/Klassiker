@@ -195,3 +195,8 @@ Linear search is a sequential searching algorithm where we start from one end an
 ### Binary Search
 Binary Search is a searching algorithm for finding an element's position in a sorted array. In this approach, the element is always searched in the middle of a portion of an array.
 ![Binary Search](src/binary-search.JPEG)
+
+
+### Linear Search vs Binary Search
+![Comparison](src/linear-vs-binary.GIF)
+
