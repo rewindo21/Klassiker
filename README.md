@@ -63,7 +63,7 @@ There are mainly three asymptotic notations:
 ## Stack
 A stack is a linear data structure that follows the principle of Last In First Out (LIFO). This means the last element inserted inside the stack is removed first. You can think of the stack data structure as the pile of plates on top of another.
 ![stack](src/stack.jpeg)
-See the code [here](Stack.c)
+See the code [here](./code/Stack%20&%20Queue/Stack.c)
 
 ### Stack Time Complexity
 
@@ -79,7 +79,7 @@ For the array-based implementation of a stack, the push and pop operations take 
 ## Queue
 A Queue is a linear data structure that follows the principle of First In First Out (FIFO). This means the first element inserted inside the stack is removed first. You can think of the stack data structure as the ticket queue outside a cinema hall, where the first person entering the queue is the first person who gets the ticket.
 ![stack](src/queue.jpeg)
-See the code [here](Queue.c)
+See the code [here](./code/Stack%20&%20Queue/Queue.c)
 
 ### Queue Time Complexity
 
@@ -118,9 +118,9 @@ Head and Tail: The linked list is accessed through the head node, which points t
 - Double linked list: In a doubly linked list, each node contains references to both the next and previous nodes. This allows for traversal in both forward and backward directions, but it requires additional memory for the backward reference.
 - Circular linked list:  In a circular linked list, the last node points back to the head node, creating a circular structure. It can be either singly or doubly linked.
   
-Simple linked list implementation [->](Linked-List.c)
+Simple linked list implementation [->](./code/Linked%20List%20&%20Hash%20Table/Linked-List.c)
 
-Linked list implementation with operations [->](Operation-Linked-List.c)
+Linked list implementation with operations [->](./code/Linked%20List%20&%20Hash%20Table/Operation-Linked-List.c)
 
 ### Linked List Time Complexity
 |  | Array | Linked List |
@@ -152,7 +152,7 @@ Hashing (Hash Function): In a hash table, a new index is processed using the key
 Hash Collision: When the hash function generates the same index for multiple keys, there will be a conflict (what value to be stored in that index). This is called a hash collision.
 
 ![Hash](src/hash-table.png)
-See the code [here]()
+See the code [here](./code/Linked%20List%20&%20Hash%20Table/Hash-Table.c)
 
 ### Applications of Linked List
 Hash tables are implemented where
@@ -167,25 +167,25 @@ Hash tables are implemented where
 ### Bubble Sort
 Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high. Just like the movement of air bubbles in the water that rise up to the surface, each element of the array move to the end in each iteration. Therefore, it is called a bubble sort.
 ![Bubble Sort](src/bubble-sort.JPEG)
-See the code [here]()
+See the code [here](./code/Sorts/Bubble-Sort.c)
 
 ### Selection Sort
 The algorithm repeatedly selects the smallest (or largest) element from the unsorted portion of the list and swaps it with the first element of the unsorted part. This process is repeated for the remaining unsorted portion until the entire list is sorted. 
 ![Selection Sort](src/selection-sort.JPEG)
-See the code [here]()
+See the code [here](./code/Sorts/Selection-Sort.c)
 
 ### Insertion Sort
 Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
 ![Insertion Sort](src/insertion-sort.JPEG)
-See the code [here]()
+See the code [here](./code/Sorts/Insertion-Sort.c)
 
 ### Merge Sort
 Merge Sort is one of the most popular sorting algorithms that is based on the principle of Divide and Conquer Algorithm. Here, a problem is divided into multiple sub-problems. Each sub-problem is solved individually. Finally, sub-problems are combined to form the final solution.
-See the code [here]()
+See the code [here](./code/Sorts/Merge-Sort.c)
 
 ### Quick Sort
 QuickSort is a sorting algorithm based on the Divide and Conquer algorithm that picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array.
-See the code [here]()
+See the code [here](./code/Sorts/Quick-Sort.c)
 
 ### Sorts Complexity Comparison
 | Algorithms | Best Case | Average Case | Worst Case| Memory |
@@ -203,12 +203,12 @@ See the code [here]()
 ### Linear Search
 Linear search is a sequential searching algorithm where we start from one end and check every element of the list until the desired element is found. It is the simplest searching algorithm.
 ![Linear Search](src/linear-search.JPEG)
-See the code [here]()
+See the code [here](./code/Searches/Linear-Search.c)
 
 ### Binary Search
 Binary Search is a searching algorithm for finding an element's position in a sorted array. In this approach, the element is always searched in the middle of a portion of an array.
 ![Binary Search](src/binary-search.JPEG)
-See the code [here]()
+See the code [here](./code/Searches/Binary-Search.c)
 
 ### Linear Search vs Binary Search
 ![Comparison](src/linear-vs-binary.GIF)
