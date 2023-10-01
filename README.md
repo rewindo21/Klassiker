@@ -165,23 +165,33 @@ Hash tables are implemented where
 ## Sort Algorithms
 
 ### Bubble Sort
+Bubble sort is a sorting algorithm that compares two adjacent elements and swaps them until they are in the intended order.
+Just like the movement of air bubbles in the water that rise up to the surface, each element of the array move to the end in each iteration. Therefore, it is called a bubble sort.
 ![Bubble Sort](src/bubble-sort.JPEG)
 
 ### Selection Sort
+Selection sort is a sorting algorithm that selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.
 ![Selection Sort](src/selection-sort.JPEG)
 
 ### Insertion Sort
+Insertion sort is a sorting algorithm that places an unsorted element at its suitable place in each iteration.
+Insertion sort works similarly as we sort cards in our hand in a card game. We assume that the first card is already sorted then, we select an unsorted card. If the unsorted card is greater than the card in hand, it is placed on the right otherwise, to the left. In the same way, other unsorted cards are taken and put in their right place.
 ![Insertion Sort](src/insertion-sort.JPEG)
 
 ### Merge Sort
+Merge Sort is one of the most popular sorting algorithms that is based on the principle of Divide and Conquer Algorithm.
+Here, a problem is divided into multiple sub-problems. Each sub-problem is solved individually. Finally, sub-problems are combined to form the final solution.
+
 ### Quick Sort
 
 <a id="searches"></a>
 ## Search Algorithms
 
 ### Linear Search
+Linear search is a sequential searching algorithm where we start from one end and check every element of the list until the desired element is found. It is the simplest searching algorithm.
 ![Linear Search](src/linear-search.JPEG)
 
 
 ### Binary Search
+Binary Search is a searching algorithm for finding an element's position in a sorted array. In this approach, the element is always searched in the middle of a portion of an array.
 ![Binary Search](src/binary-search.JPEG)
