@@ -167,20 +167,35 @@ Hash tables are implemented where
 ### Bubble Sort
 Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high. Just like the movement of air bubbles in the water that rise up to the surface, each element of the array move to the end in each iteration. Therefore, it is called a bubble sort.
 ![Bubble Sort](src/bubble-sort.JPEG)
+See the code [here]()
 
 ### Selection Sort
 The algorithm repeatedly selects the smallest (or largest) element from the unsorted portion of the list and swaps it with the first element of the unsorted part. This process is repeated for the remaining unsorted portion until the entire list is sorted. 
 ![Selection Sort](src/selection-sort.JPEG)
+See the code [here]()
 
 ### Insertion Sort
 Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
 ![Insertion Sort](src/insertion-sort.JPEG)
+See the code [here]()
 
 ### Merge Sort
 Merge Sort is one of the most popular sorting algorithms that is based on the principle of Divide and Conquer Algorithm. Here, a problem is divided into multiple sub-problems. Each sub-problem is solved individually. Finally, sub-problems are combined to form the final solution.
+See the code [here]()
 
 ### Quick Sort
 QuickSort is a sorting algorithm based on the Divide and Conquer algorithm that picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array.
+See the code [here]()
+
+### Sorts Complexity Comparison
+| Algorithms | Best Case | Average Case | Worst Case| Memory |
+| ----------- | ----------- | ----------- | ----------- | -----------|
+| Buuble Sort | n | n^2 | n^2 | 1 |
+| Selection Sort | n^2 | n^2 | n^2 | 1 |
+| Insertion Sort | n | n^2 | n^2 | 1 |
+| Merge Sort | nlogn | nlogn | nlogn | n |
+| Quick Sort | nlogn | nlogn | n^2 | nlogn |
+
 
 <a id="searches"></a>
 ## Search Algorithms
@@ -188,12 +203,12 @@ QuickSort is a sorting algorithm based on the Divide and Conquer algorithm that 
 ### Linear Search
 Linear search is a sequential searching algorithm where we start from one end and check every element of the list until the desired element is found. It is the simplest searching algorithm.
 ![Linear Search](src/linear-search.JPEG)
-
+See the code [here]()
 
 ### Binary Search
 Binary Search is a searching algorithm for finding an element's position in a sorted array. In this approach, the element is always searched in the middle of a portion of an array.
 ![Binary Search](src/binary-search.JPEG)
-
+See the code [here]()
 
 ### Linear Search vs Binary Search
 ![Comparison](src/linear-vs-binary.GIF)
