@@ -165,24 +165,22 @@ Hash tables are implemented where
 ## Sort Algorithms
 
 ### Bubble Sort
-Bubble sort is a sorting algorithm that compares two adjacent elements and swaps them until they are in the intended order.
-Just like the movement of air bubbles in the water that rise up to the surface, each element of the array move to the end in each iteration. Therefore, it is called a bubble sort.
+Bubble Sort is the simplest sorting algorithm that works by repeatedly swapping the adjacent elements if they are in the wrong order. This algorithm is not suitable for large data sets as its average and worst-case time complexity is quite high. Just like the movement of air bubbles in the water that rise up to the surface, each element of the array move to the end in each iteration. Therefore, it is called a bubble sort.
 ![Bubble Sort](src/bubble-sort.JPEG)
 
 ### Selection Sort
-Selection sort is a sorting algorithm that selects the smallest element from an unsorted list in each iteration and places that element at the beginning of the unsorted list.
+The algorithm repeatedly selects the smallest (or largest) element from the unsorted portion of the list and swaps it with the first element of the unsorted part. This process is repeated for the remaining unsorted portion until the entire list is sorted. 
 ![Selection Sort](src/selection-sort.JPEG)
 
 ### Insertion Sort
-Insertion sort is a sorting algorithm that places an unsorted element at its suitable place in each iteration.
-Insertion sort works similarly as we sort cards in our hand in a card game. We assume that the first card is already sorted then, we select an unsorted card. If the unsorted card is greater than the card in hand, it is placed on the right otherwise, to the left. In the same way, other unsorted cards are taken and put in their right place.
+Insertion sort is a simple sorting algorithm that works similar to the way you sort playing cards in your hands. The array is virtually split into a sorted and an unsorted part. Values from the unsorted part are picked and placed at the correct position in the sorted part.
 ![Insertion Sort](src/insertion-sort.JPEG)
 
 ### Merge Sort
-Merge Sort is one of the most popular sorting algorithms that is based on the principle of Divide and Conquer Algorithm.
-Here, a problem is divided into multiple sub-problems. Each sub-problem is solved individually. Finally, sub-problems are combined to form the final solution.
+Merge Sort is one of the most popular sorting algorithms that is based on the principle of Divide and Conquer Algorithm. Here, a problem is divided into multiple sub-problems. Each sub-problem is solved individually. Finally, sub-problems are combined to form the final solution.
 
 ### Quick Sort
+QuickSort is a sorting algorithm based on the Divide and Conquer algorithm that picks an element as a pivot and partitions the given array around the picked pivot by placing the pivot in its correct position in the sorted array.
 
 <a id="searches"></a>
 ## Search Algorithms
