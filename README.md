@@ -12,6 +12,7 @@ Implementation of data structures using C language. What in the world is more cl
 - [Hash Table](#has-table)
 - [Sort Algorithms](#sorts)
 - [Search Algorithms](#searches)
+- [Graph](#graph)
 
 <a id="question"></a>
 ## Why Learn DSA?
@@ -140,7 +141,7 @@ Linked list implementation with operations [->](./code/Linked%20List%20&%20Hash%
 
 <a id="hash-table"></a>
 ## Hash Table
-The Hash table data structure stores elements in key-value pairs where
+The Hash table data structure stores elements in key-value pairs where:
 
 - Key- unique integer that is used for indexing the values
 - Value - data that are associated with keys.
@@ -213,3 +214,39 @@ See the code [here](./code/Searches/Binary-Search.c)
 ### Linear Search vs Binary Search
 ![Comparison](src/linear-vs-binary.GIF)
 
+
+<a id="tree"></a>
+## Tree
+A tree is a non-linear hierarchical data structure that consists of nodes connected by edges such that there exists exactly one path between any two nodes.
+
+![Tree](src/tree.png)
+
+### Tree Terminologies
+- Node: A node is an entity that contains a key or value and pointers to its child nodes.
+- Root: It is the topmost node of a tree.
+- Leaf: The last nodes of each path.(do not contain a link/pointer to child nodes.)
+- Edge: It is the link between any two nodes.
+- Height of a Node: The number of edges from the node to the deepest leaf.
+- Depth of a Node: The number of edges from the root to the node.
+- Height of a Tree: The height of the root node.
+
+### Why Tree Data Structure?
+Other data structures such as arrays, linked list, stack, and queue are linear data structures that store data sequentially. In order to perform any operation in a linear data structure, the time complexity increases with the increase in the data size. But, it is not acceptable in today's computational world.
+
+Different tree data structures allow quicker and easier access to the data as it is a non-linear data structure.
+
+
+<a id="graph"></a>
+## Graph
+A Graph is a non-linear data structure that consists of vertices connected by edges. More formally a Graph is composed of a set of vertices( V ) and a set of edges( E ). The graph is denoted by G(E, V).
+
+### Difference Between Tree and Graph
+![Tree vs Graph](src/tree-vs-graph.jpg)
+- Graphs do not have a root node.
+- Graphs can have more than one path between vertices, so they can have loops.
+- Graphs have two traversal techniques namely, breadth−first search and depth−first search, but Trees have three traversal techniques namely, pre−order, in−order, and post−order.
+
+### Graph Applications
+Graphs are used to solve many real-life problems. Graphs are used to represent networks. The networks may include paths in a city or telephone network or circuit network. Graphs are also used in social networks. For example facebook uses a graph data structure to store its data. In Facebook, each person is represented with a vertex(or node). Each node is a structure and contains information like person id, name, gender, locale etc. Every relationship is an edge from one node to another. Whether you post a photo, join a group, like a page, etc., a new edge is created for that relationship.
+
+## Spanning Tree
