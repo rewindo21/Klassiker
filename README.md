@@ -250,3 +250,9 @@ A Graph is a non-linear data structure that consists of vertices connected by ed
 Graphs are used to solve many real-life problems. Graphs are used to represent networks. The networks may include paths in a city or telephone network or circuit network. Graphs are also used in social networks. For example facebook uses a graph data structure to store its data. In Facebook, each person is represented with a vertex(or node). Each node is a structure and contains information like person id, name, gender, locale etc. Every relationship is an edge from one node to another. Whether you post a photo, join a group, like a page, etc., a new edge is created for that relationship.
 
 ## Spanning Tree
+![Spanning Trees](src/spanning-trees.jpeg)
+A spanning tree is a sub-graph of an <u>undirected</u> <u>connected</u> graph, which includes all the vertices of the graph with a minimum possible number of edges. 
+
+An undirected graph is a graph in which the edges do not point in any direction (ie. the edges are bidirectional).
+
+A connected graph is a graph in which there is always a path from a vertex to any other vertex.
