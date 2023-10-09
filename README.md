@@ -12,7 +12,9 @@ Implementation of data structures using C language. What in the world is more cl
 - [Hash Table](#has-table)
 - [Sort Algorithms](#sorts)
 - [Search Algorithms](#searches)
+- [Tree](#tree)
 - [Graph](#graph)
+- [Greedy Algorithm](#greedy)
 
 <a id="question"></a>
 ## Why Learn DSA?
@@ -266,3 +268,33 @@ A minimum spanning tree is a spanning tree in which the sum of the weight of the
 - Computer Network Routing Protocol
 - Cluster Analysis
 - Civil Network Planning
+
+
+## Top-Down Model vs Bottom-Up Model
+| Top-Down | Bottom-Up |
+| ----------- | ----------- |
+| Starts from the High-Level Overview: In a top-down approach, you begin with a high-level view of the entire system, process, or problem. | Starts from the Details: In a bottom-up approach, you begin with the smallest, most detailed components or elements of a system, process, or problem. |
+| Breaks It Down into Subcomponents: You then break down this high-level view into smaller, manageable subcomponents or tasks. | Progresses Toward the Whole: You then gradually build up or aggregate these smaller components to create a complete system or solution. |
+| Mainly used by structured programming language such as COBOL, Fortran, C. | Mainly used by object oriented programming language such as C++, Java, Python. |
+
+<a id="greedy"></a>
+## Greedy Algorithm
+A greedy algorithm is an approach for solving a problem by selecting the best option available at the moment. It doesn't worry whether the current best result will bring the overall optimal result.
+
+The algorithm never reverses the earlier decision even if the choice is wrong. It works in a top-down approach.
+
+This algorithm may not produce the best result for all the problems. It's because it always goes for the local best choice to produce the global best result.
+
+### Example
+Problem: You have to make a change of an amount using the smallest possible number of coins.
+
+Amount: $18
+
+Available coins are
+- $5 coin
+- $2 coin
+- $1 coin
+
+There is no limit to the number of each coin you can use.
+
+Solution: {5, 5, 5, 2, 1}
