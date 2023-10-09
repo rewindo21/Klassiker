@@ -251,8 +251,18 @@ Graphs are used to solve many real-life problems. Graphs are used to represent n
 
 ## Spanning Tree
 ![Spanning Trees](src/spanning-trees.jpeg)
-A spanning tree is a sub-graph of an <u>undirected</u> <u>connected</u> graph, which includes all the vertices of the graph with a minimum possible number of edges. 
+A spanning tree is a sub-graph of an <u>undirected</u> and <u>connected</u> graph, which includes all the vertices of the graph with a minimum possible number of edges. 
 
 An undirected graph is a graph in which the edges do not point in any direction (ie. the edges are bidirectional).
 
 A connected graph is a graph in which there is always a path from a vertex to any other vertex.
+
+The total number of spanning trees with n vertices that can be created from a complete graph is equal to n(n-2).
+
+### Minimum Spanning Tree
+A minimum spanning tree is a spanning tree in which the sum of the weight of the edges is as minimum as possible.
+
+### Spanning Tree Applications
+- Computer Network Routing Protocol
+- Cluster Analysis
+- Civil Network Planning
