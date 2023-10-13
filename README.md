@@ -248,6 +248,27 @@ A Graph is a non-linear data structure that consists of vertices connected by ed
 - Graphs can have more than one path between vertices, so they can have loops.
 - Graphs have two traversal techniques namely, breadth−first search and depth−first search, but Trees have three traversal techniques namely, pre−order, in−order, and post−order.
 
+### Graphs traversal techniques
+sample:
+
+        A
+       / \
+      B   C
+     /   / \
+    D   E   F
+
+BFS (Breadth-First Search): A, B, C, D, E, F
+- uses Queue data structure for finding the shortest path.
+- requires more memory. 
+- there is no problem of trapping into infinite loops.
+- When the target is close to the source, BFS performs better.
+
+DFS (Depth First Search): A, B, C, D, E, F
+- uses Stack data structure.
+- requires less memory. 
+- we may be trapped in infinite loops.
+- When the target is far from the source, DFS is preferable. 
+
 ### Graph Applications
 Graphs are used to solve many real-life problems. Graphs are used to represent networks. The networks may include paths in a city or telephone network or circuit network. Graphs are also used in social networks. For example facebook uses a graph data structure to store its data. In Facebook, each person is represented with a vertex(or node). Each node is a structure and contains information like person id, name, gender, locale etc. Every relationship is an edge from one node to another. Whether you post a photo, join a group, like a page, etc., a new edge is created for that relationship.
 
@@ -273,8 +294,8 @@ A minimum spanning tree is a spanning tree in which the sum of the weight of the
 ## Top-Down Model vs Bottom-Up Model
 | Top-Down | Bottom-Up |
 | ----------- | ----------- |
-| Starts from the High-Level Overview: In a top-down approach, you begin with a high-level view of the entire system, process, or problem. | Starts from the Details: In a bottom-up approach, you begin with the smallest, most detailed components or elements of a system, process, or problem. |
-| Breaks It Down into Subcomponents: You then break down this high-level view into smaller, manageable subcomponents or tasks. | Progresses Toward the Whole: You then gradually build up or aggregate these smaller components to create a complete system or solution. |
+| Starts from the High-Level Overview | Starts from the Details |
+| Breaks It Down into Subcomponents | Progresses Toward the Whole |
 | Mainly used by structured programming language such as COBOL, Fortran, C. | Mainly used by object oriented programming language such as C++, Java, Python. |
 
 <a id="greedy"></a>
